@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-1 {
+            appearance: button;
+            background-color: #23FF00;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: din-round,sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 13px 16px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 30%;
+            }
+
+
+
+        .button-1:hover {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+        
+        .button-2 {
+            appearance: button;
+            background-color: #FF0000;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: din-round,sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 13px 16px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 30%;
+            }
+
+
+
+        .button-2:hover {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+        
+        .button-3 {
+            appearance: button;
+            background-color: #1899D6;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: din-round,sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 13px 16px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 30%;
+            }
+
+
+
+        .button-3:hover {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+
+
+
+
+
+
+        /*
+        class: .name
+        normal: name
+        id: #name*/
+        button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        button:hover {
+
+
+
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+
+            color: #fff;
+
+            transform: translateY(-5px);
+        }
+        
+        .color1 {
+            background-color: #2ee59d;
+        }
+
+        .color2 {
+            background-color: #aaaaaa;
+        }
+        .color3 {
+            background-color: #a34a9f;
+        }
+
+
+        </style>
+</head>
+<body>
+    <h1 id="header-1">counter</h1>
+    <p id="counter"></p>
+    <button type="button", id="btn-1", class="button-1">increase</button>
+    <button type="button", id="btn-2", class="button-2">decrease</button>
+    <button type="button", id="btn-3", class="button-3">reset</button>
+</body>
+<script>
+    const button1=document.getElementById("btn-1");
+    const button2=document.getElementById("btn-2");
+    const button3=document.getElementById("btn-3");
+    const title=document.getElementById('header-1');
+    const display=document.getElementById('counter');
+
+
+    counter = 0;
+    display.innerText=counter;
+    button1.addEventListener("click", (event)=>{
+        counter++;
+        display.innerText=counter;
+    });
+    button2.addEventListener("click", (event)=>{
+        counter--;
+        display.innerText=counter;
+    });
+    button3.addEventListener("click", (event)=>{
+        counter=0;
+        display.innerText=counter;
+    });
+
+
+</script>
+</html>
